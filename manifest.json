@@ -1,0 +1,29 @@
+{
+    "manifest_version": 2,
+    "name": "Jobs",
+    "description": "Find jobs while surfing the internet",
+    "version": "0.1.0",
+    "icons": {
+        "128": "icon_128.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "script.js"
+            ],
+            "css": [
+                "style.css"
+            ]
+        }
+    ]
+}
